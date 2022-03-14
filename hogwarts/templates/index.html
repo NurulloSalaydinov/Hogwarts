@@ -1,0 +1,678 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Hogwarts O'quv markazi</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     
+     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/static/css/owl.carousel.css">
+     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+     <style type="text/css">div.owl-prev,div.owl-next{width: 70px !important;}select {
+          background: #333 !important;
+        }
+     	</style>
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="/static/css/templatemo-style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="/static/index.html" class="navbar-brand">Hogwarts</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#top" class="smoothScroll">Bosh sahifa</a></li>
+                         <li><a href="#about" class="smoothScroll">Haqimizda</a></li>
+                                             <li><a href="#courses" class="smoothScroll">Kurslar</a></li>
+                         <li><a href="#testimonial" class="smoothScroll">Talabalar</a></li>
+                         <li><a href="#contact" class="smoothScroll">Bog'lanish</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="tel:998916110083"><i class="fa fa-phone"></i>+998 91 611 00 83</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home">
+          <div class="row">
+
+                    <div class="owl-carousel owl-theme home-slider">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-6 col-sm-12">
+                                             <h1>Masofadan onlayn o`quv markazi</h1>
+                                             <h3>Bizning "Hogwarts" o`quv markazimizda Ingliz tilini noldan  boshlab 100% organing </h3>
+                                             <a href="#feature" class="section-btn btn btn-default smoothScroll">Ko`proq ma`lumot olish</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-second">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-6 col-sm-12">
+                                             <h1>O`z iqtidoringizni oshiring bizda IELTS balingiz 6.5 dan yuqorilarga olib chiqing</h1>
+                                             <h3></h3>
+                                             <a href="#courses" class="section-btn btn btn-default smoothScroll">Kursga kirish</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-third">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-6 col-sm-12">
+                                             <h1>Yangi uslubdagi dars turi</h1>
+                                             <h3>Va bizda Siz ko`rmagan va xali xechkim qo`llab ko`rmagan yangi o`quv metodi bor</h3>
+                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Boshlash</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+          </div>
+     </section>
+
+
+     <!-- FEATURE -->
+     <section id="feature">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>01</span>
+                              <h3>10% chegirma</h3>
+                              <p>Har bir taklif qilgan o'quvchigiz uchun 10% chegirma olasiz</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>02</span>
+                              <h3>Istalgan vaqtda</h3>
+                              <p>Istalgan vaqtingizda kelib tayyorlanish xonasida tayyorlanishingiz mumkin</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>03</span>
+                              <h3>Sertifikatga ega ustoz</h3>
+                              <p>Va siz bu yerda juda ko`plab iqtidorli ustozlar bilan tanishib chiqasiz va o`zingizga yoqqanini tanlashingiz mumkin</p>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-info">
+                              <h2>Hayotingizni yaxshilash uchun ta`lim olishni tezroq boshlang</h2>
+
+                              <figure>
+                                   <span><i class="fa fa-users"></i></span>
+                                   <figcaption>
+                                        <h3>Profissional ustozlar</h3>
+                                        <p>Bizda ko`plab universtitetlarni tugallab kelgan  ustozlar mavjud</p>
+                                   </figcaption>
+                              </figure>
+
+                              <figure>
+                                   <span><i class="fa fa-certificate"></i></span>
+                                   <figcaption>
+                                        <h3>Xalqaro sertifikatlar</h3>
+                                        <p>Bizning o`quv markazni tugallab borganingiz sari Xalqaro sertifikatlarni qo`lga kiritishingiz mumkin </p>
+                                   </figcaption>
+                              </figure>
+
+                              <figure>
+                                   <span><i class="fa fa-bar-chart-o"></i></span>
+                                   <figcaption>
+                                        <h3>Boshlang`ich 3 dars bepul</h3>
+                                        <p>Bizda boshlang`ich 3 ta tanishuv  darslari bepul ravishda o`rgatiladi</p>
+                                   </figcaption>
+                              </figure>
+                         </div>
+                    </div>
+
+                    <div class="col-md-offset-1 col-md-4 col-sm-12">
+                         <div class="entry-form">
+                              <form method="post">
+                                   {% csrf_token %}
+                                   <h2>Hoziroq ro`yxatdan o`tish </h2>
+                                   {{ registerForm|crispy }}   
+                                   <button class="submit-btn form-control" id="form-submit">Kursga yozdirish</button>
+                              </form>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TEAM -->
+     <section id="team">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Ustozlar <small>Professional uztozlar darslariga a`zo bo`lish</small></h2>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <div class="team-thumb">
+                              <div class="team-image">
+                                   <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                              </div>
+                              <div class="team-info">
+                                   <h3>Somebody</h3>
+                                   <span>Somebody's word</span>
+                              </div>
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <div class="team-thumb">
+                              <div class="team-image">
+                                   <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                              </div>
+                              <div class="team-info">
+                                   <h3>Somebody</h3>
+                                   <span>Somebody's word</span>
+                              </div>
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-google"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <div class="team-thumb">
+                              <div class="team-image">
+                                   <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                              </div>
+                              <div class="team-info">
+                                   <h3>Somebody</h3>
+                                   <span>Somebody's word</span>
+                              </div>
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                   <li><a href="#" class="fa fa-linkedin"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <div class="team-thumb">
+                              <div class="team-image">
+                                   <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                              </div>
+                              <div class="team-info">
+                                   <h3> Somebody</h3>
+                                   <span>Somebody's word</span>
+                              </div>
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-google"></a></li>
+                                   <li><a href="#" class="fa fa-behance"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- Courses -->
+     <section id="courses">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Ingliz tili kurslari <small>O`z qobilyatlaringizni biz bilan kuchaytiring</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-courses">
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i></span>
+                                                       <span><i class="fa fa-clock-o"></i> 1.5 soat</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">English</a></h3>
+                                                  <p>Abduroziq bilan boshlang'ich (beginner) Ingliz tilini o'rganing </p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                       <span>Abduroziq Halilov</span>
+                                                  </div>
+                                                  <div class="courses-price">
+                                                       <a href="#"><span> UZS oyiga</span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 20 / 7 / 2021</span>
+                                                       <span><i class="fa fa-clock-o"></i> 1.5 soat</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">English</a></h3>
+                                                  <p>Abduroziq bilan 2-bosqichli (Intermediate) Ingliz tilini o'rganing 
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                       <span>Abduroziq Halilov</span>
+                                                  </div>
+                                                  <div class="courses-price">
+                                                       <a href="#"><span> UZS (oyiga) </span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 15 / 8 / 2021</span>
+                                                       <span><i class="fa fa-clock-o"></i> 2s soat</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">English</a></h3>
+                                                  <p>Abduroziq bilan 3,4-bosqichli (advanced) Ingliz tilini o'rganing </p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                       <span>Abduroziq Halilov</span>
+                                                  </div>
+                                                  <div class="courses-price free">
+                                                       <a href="#"><span> UZS</span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 10 / 8 / 2021</span>
+                                                       <span><i class="fa fa-clock-o"></i> 8 soat</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">English</a></h3>
+                                                  <p>Abduroziq bilan I.E.L.T.S ni o'rganing </p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                       <span>Abduroziq Halilov</span>
+                                                  </div>
+                                                  <div class="courses-price">
+                                                       <a href="#"><span> UZS<span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 5 / 10 / 2021</span>
+                                                       <span><i class="fa fa-clock-o"></i> 10 soat</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">Adobe &amp; Office</a></h3>
+                                                  <p>Adobe & Office darsliklarini bonus sifatida o`rganing</p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                                       <span>Hasanboy</span>
+                                                  </div>
+                                                  <div class="courses-price free">
+                                                       <a href="#"><span>Bepul (bonus) </span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TESTIMONIAL -->
+     <section id="testimonial">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Yetakchi talabalarimiz<small>dunyo bo`ylab</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-client">
+                              <div class="col-md-4 col-sm-10">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Somebody </h4>
+                                             <span>Ayni paytda Londonda tahsil olmoqda</span>
+                                        </div>
+                                        <p>You really do help young creative minds to get quality education and professional job search assistance. I’d recommend it to everyone!</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-10">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Somebody</h4>
+                                             <span>Ayni paytda Amerikada tahsil olmoqda</span>
+                                        </div>
+                                        <p>Trying something new is exciting! Thanks for the amazing law course and the great teacher who was able to make it interesting.</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-10">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Somebody</h4>
+                                             <span>Ayni paytda Kanada da tahsil olmoqda</span>
+                                        </div>
+                                        <p>Time is your enemy. So Work clever not <header></header></p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-10">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="/static/image/test.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Somebody</h4>
+                                             <span>Ayni paytda Koreyada tahsil olmoqda</span>
+                                        </div>
+                                        <p>Thanks for all of you</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+
+               </div>
+          </div>
+     </section> 
+
+
+     <!-- CONTACT -->
+     <section id="contact">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <form id="contact-form" role="form" action="" method="post">
+                              {% csrf_token %}
+                              <div class="section-title">
+                                   <h2>Bizga murojat qilish <small>biz suxbatlarni sevamiz. biz bilan aloqaga chiqing!</small></h2>
+                              </div>
+
+                              <div class="col-md-12 col-sm-12">
+                                   {{ contactForm|crispy }}
+                              </div>
+
+                              <div class="col-md-4 col-sm-12">
+                                   <input type="submit" class="form-control" name="send message" value="Jo'natish">
+                              </div>
+
+                         </form>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="contact-image">
+                              <img src="/static/image/test.jpg" class="img-responsive" alt="courses-price">
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>       
+
+
+     <!-- FOOTER -->
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Haqimizda</h2>
+                              </div>
+                              <address>
+                                   <p>Bizni ijtimoiy tarmoqlarda ham kuzating<br>
+                              </address>
+
+                              <ul class="social-icon">
+                                   <li><a style="font-size: 32px;" href="/static/https://t.me/NEW_HOGWARTS" class="fa fa-telegram" _	new=""></a></li>
+                              </ul>
+
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2022 Hogwarts Educational center</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Kontakt info</h2>
+                              </div>
+                              <address>
+                                   <p><a href="tel:916110083">+998 91 611 00 83</a></p>
+                                   <p><a href="/static/mailto:youremail.co">example@gmail.com</a></p>
+                              </address>
+
+                              <div class="footer_menu">
+                                   <h2>Tezkor linklar</h2>
+                                   <ul>
+                         <li><a href="#top" class="smoothScroll">Bosh sahifa</a></li>
+                         <li><a href="#about" class="smoothScroll">Haqimizda</a></li>
+                                             <li><a href="#courses" class="smoothScroll">Kurslar</a></li>
+                         <li><a href="#testimonial" class="smoothScroll">Talabalar</a></li>
+                         <li><a href="#contact" class="smoothScroll">Bog'lanish</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                         <div class="footer-info newsletter-form">
+                              <div class="section-title">
+                                   <h2>Yangiliklardan xabardor bo`lish</h2>
+                              </div>
+                              <div>
+                                   <div class="form-group">
+                                        <form action="#" method="get">
+                                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required="">
+                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                        </form>
+                                        <span><sup>*</sup>Qo`rqmang biz xech qachon akkauntingizni spamlamaymiz</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <script>
+          index = 0;
+          input_placeholder = ["", "To'liq ismingiz", "Telefon Raqamingiz", "", "To'liq ismingiz", "Email manzilingiz", "", "Emailingizni kiriting"]
+          document.querySelectorAll('input').forEach(e => {
+               e.setAttribute('Placeholder', `${input_placeholder[index]}`)
+               index++;
+          });
+          document.querySelectorAll('label').forEach(e => {
+               e.style = 'display: none;'
+          });
+          document.querySelectorAll('.invalid-feedback').forEach(e => {
+               e.style = 'display: none;'
+          });
+          document.querySelectorAll('textarea').forEach(e => {
+               e.setAttribute('Placeholder', 'Bizga murojatingiz')
+          })
+     </script>
+
+     <!-- SCRIPTS -->
+     <script src="/static/js/jquery.js"></script>
+     <script src="/static/js/bootstrap.min.js"></script>
+     <script src="/static/js/owl.carousel.min.js"></script>
+     <script src="/static/js/smoothscroll.js"></script>
+     <script src="/static/js/custom.js"></script>
+
+</body>
+</html>
