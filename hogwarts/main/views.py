@@ -19,7 +19,7 @@ def home_view(request):
             name = request.POST.get('full_name')
             phone = request.POST.get('phone')
             degree = request.POST.get('degree')
-            bot.sendMessage('1060158414', f'Hey New Student\n{name}\n{phone}\n{degree}')
+            bot.sendMessage('Your Id', f'Hey New Student\n{name}\n{phone}\n{degree}')
             registerForm.save()
             return redirect('/')
     else:
